@@ -1,0 +1,55 @@
+.aboutWrapper {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    color: white;
+    font-family: "Quicksand", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+  }
+  
+  .div1 {
+    grid-area: 2 / 2 / 4 / 5;
+    font-size: 2rem;
+  }
+  .div2 {
+    grid-area: 4 / 2 / 6 / 8;
+  }
+
+  .hobbyListTitle {
+    font-size: 2rem;
+  }
+  
+  .hobbies {
+    display: flex;
+    flex-direction: column;
+    float: left;
+  }
+  
+  .hobbiesList li {
+    display: inline-flex;
+    padding-left: 5px;
+  }
+
+
+ .imageBox {
+    grid-area: 1 / 5 / 6 / 9; /* Placera i högerdelen av layouten */
+    width: 500px; /* Bredd på rutan */
+    height: 500px; /* Höjd på rutan */
+    background-color: rgba(255, 255, 255, 0.3); /* Transparent vit bakgrund */
+    border: 2px solid rgba(255, 255, 255, 0.5); /* Halvtransparent kant */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto; /* Centrerad i sin grid-area */
+    border-radius: 8px; /* Rundade hörn */
+}
+
+ .imageInsideBox {
+    width: 90%; /* Anpassar storleken på bilden till rutan */
+    height: 90%; /* Bevarar bildens proportioner */
+    object-fit: cover; /* Anpassar bilden så den täcker utan att förvrängas */
+    border-radius: 4px; /* Rundade hörn på bilden */
+}

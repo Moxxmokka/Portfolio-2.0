@@ -1,0 +1,47 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  font-size: 3rem;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--primary-color);
+  }
+
+  ul {
+    display: flex;
+    list-style: none;
+    font-size: 2rem;
+  }
+  ul li {
+    margin: 1rem;
+  }
+
+  header a:hover #jump {
+    display: inline-block;
+    animation: jump 0.5s;
+  }
+  
+  @keyframes jump {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .active {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    padding: 13px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 30px;
+  }

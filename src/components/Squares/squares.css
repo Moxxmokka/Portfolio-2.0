@@ -1,0 +1,10 @@
+.squares-canvas {
+    position: fixed; /* Gör att canvasen täcker hela skärmen */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full bredd */
+    height: 100vh; /* Full höjd */
+    z-index: -1; /* Låt den vara bakom allt annat innehåll */
+    pointer-events: none; /* Förhindra att canvas interagerar med användaren */
+  }
+  
